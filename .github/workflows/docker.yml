@@ -12,7 +12,7 @@ jobs:
        uses: actions/checkout@v4
 
     -  name: build image
-       run: docker build -t my-docker-app:latest .
+       run: docker build -t alloar/my-docker-app:latest .
 
     -  name: login to the dockerhub
        run: docker login -u alloar -p ${{ secrets.DOCKER_PASSWORD }}
